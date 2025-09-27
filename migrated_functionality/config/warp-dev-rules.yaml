@@ -1,0 +1,363 @@
+# 🚀 WARP.DEV INTEGRATION RULES
+# $698B+ IZA OS Enterprise Ecosystem
+# Version: 2.0.0
+# Last Updated: 2024-12-26
+
+# Warp.dev Integration Configuration
+warp_integration:
+  name: "Warp.dev Integration Hub"
+  version: "2.0.0"
+  ecosystem_value: "$698B+"
+  description: "Unified Warp.dev integration for $698B+ IZA OS Enterprise Ecosystem"
+  
+  # MCP Server Configuration
+  mcp_servers:
+    ecosystem_mcp_server:
+      name: "Ecosystem MCP Server"
+      port: 8000
+      endpoint: "http://localhost:8000"
+      description: "Main ecosystem access for $698B+ platform"
+      capabilities:
+        - "billionaire_consciousness_empire"
+        - "iza_enterprise_platform" 
+        - "worldwidebro_integration"
+        - "genix_bank_financial"
+        - "ai_agent_ecosystem"
+        - "platform_integrations"
+        - "specialized_tools"
+    
+    claude_chat_analyzer:
+      name: "Claude Chat Analyzer"
+      port: 8001
+      endpoint: "http://localhost:8001"
+      description: "Claude AI chat analysis and processing"
+      capabilities:
+        - "chat_analysis"
+        - "conversation_extraction"
+        - "ai_processing"
+    
+    project_executor:
+      name: "Project Executor"
+      port: 8002
+      endpoint: "http://localhost:8002"
+      description: "Project execution automation"
+      capabilities:
+        - "project_management"
+        - "execution_automation"
+        - "workflow_orchestration"
+    
+    business_monetizer:
+      name: "Business Monetizer"
+      port: 8003
+      endpoint: "http://localhost:8003"
+      description: "Business monetization optimization"
+      capabilities:
+        - "revenue_optimization"
+        - "business_intelligence"
+        - "monetization_tracking"
+
+# Warp.dev Workflow Rules
+workflow_rules:
+  # Ecosystem Access Rules
+  ecosystem_access:
+    primary_command: "memu"
+    description: "Access $698B+ ecosystem components"
+    aliases: ["ecosystem", "iza", "billionaire"]
+    
+    subcommands:
+      status:
+        description: "Check ecosystem status and health"
+        command: "memu status"
+        output: "Comprehensive ecosystem health report"
+      
+      deploy:
+        description: "Deploy ecosystem services"
+        command: "memu deploy"
+        output: "Unified deployment execution"
+      
+      monitor:
+        description: "Monitor ecosystem services"
+        command: "memu monitor"
+        output: "Real-time monitoring dashboard"
+      
+      security:
+        description: "Run security checks and hardening"
+        command: "memu security"
+        output: "Security audit and hardening"
+  
+  # AI Agent Orchestration Rules
+  ai_orchestration:
+    primary_command: "ai-swarm"
+    description: "Orchestrate AI agent ecosystem"
+    aliases: ["agents", "ai", "crew"]
+    
+    subcommands:
+      start:
+        description: "Start AI agent swarm"
+        command: "ai-swarm start"
+        output: "Agent swarm initialization"
+      
+      status:
+        description: "Check agent status"
+        command: "ai-swarm status"
+        output: "Agent health and performance"
+      
+      deploy:
+        description: "Deploy new agents"
+        command: "ai-swarm deploy"
+        output: "Agent deployment execution"
+  
+  # Business Intelligence Rules
+  business_intelligence:
+    primary_command: "biz-intel"
+    description: "Access business intelligence systems"
+    aliases: ["business", "intel", "analytics"]
+    
+    subcommands:
+      revenue:
+        description: "Revenue tracking and analysis"
+        command: "biz-intel revenue"
+        output: "Revenue analytics dashboard"
+      
+      market:
+        description: "Market analysis and trends"
+        command: "biz-intel market"
+        output: "Market intelligence report"
+      
+      performance:
+        description: "Business performance metrics"
+        command: "biz-intel performance"
+        output: "Performance analytics"
+
+# Warp.dev Command Aliases
+command_aliases:
+  # Quick ecosystem access
+  "memu-status": "memu status"
+  "memu-deploy": "memu deploy"
+  "memu-monitor": "memu monitor"
+  "memu-security": "memu security"
+  
+  # AI agent shortcuts
+  "ai-start": "ai-swarm start"
+  "ai-status": "ai-swarm status"
+  "ai-deploy": "ai-swarm deploy"
+  
+  # Business intelligence shortcuts
+  "biz-revenue": "biz-intel revenue"
+  "biz-market": "biz-intel market"
+  "biz-performance": "biz-intel performance"
+  
+  # Development shortcuts
+  "dev-start": "docker-compose up -d"
+  "dev-stop": "docker-compose down"
+  "dev-logs": "docker-compose logs -f"
+  "dev-restart": "docker-compose restart"
+  
+  # Monitoring shortcuts
+  "health": "node _MCP_INTEGRATION_HUB/monitoring/unified-health-check.js"
+  "daily-health": "node _MCP_INTEGRATION_HUB/monitoring/daily-health-check.js"
+  "security-check": "node _MCP_INTEGRATION_HUB/monitoring/security-monitor.js"
+
+# Warp.dev Environment Variables
+environment_variables:
+  ECOSYSTEM_ROOT: "/Users/divinejohns/memU"
+  ECOSYSTEM_VALUE: "$698B+"
+  MCP_HUB_PATH: "_MCP_INTEGRATION_HUB"
+  DEPLOY_PATH: "deploy"
+  MONITORING_PATH: "_MCP_INTEGRATION_HUB/monitoring"
+  SECURITY_PATH: "_MCP_INTEGRATION_HUB/security"
+  
+  # Service endpoints
+  API_GATEWAY_URL: "http://localhost:8080"
+  MEMU_DASHBOARD_URL: "http://localhost:3004"
+  BACKEND_CORE_URL: "http://localhost:3000"
+  GRAFANA_URL: "http://localhost:3001"
+  PROMETHEUS_URL: "http://localhost:9090"
+
+# Warp.dev Custom Prompts
+custom_prompts:
+  ecosystem_prompt: |
+    🚀 $698B+ IZA OS Enterprise Ecosystem
+    ===================================
+    
+    You are operating within the $698B+ IZA OS Enterprise Ecosystem.
+    
+    Available Commands:
+    - memu status     : Check ecosystem health
+    - memu deploy     : Deploy ecosystem services
+    - memu monitor    : Monitor services
+    - ai-swarm start  : Start AI agent swarm
+    - biz-intel revenue: Revenue analytics
+    
+    Current Directory: {{current_directory}}
+    Ecosystem Value: $698B+
+    
+    How can I help you manage your billion-dollar ecosystem today?
+  
+  ai_agent_prompt: |
+    🤖 AI Agent Swarm Controller
+    ============================
+    
+    You are controlling the AI agent swarm within the $698B+ ecosystem.
+    
+    Agent Commands:
+    - ai-swarm start  : Initialize agent swarm
+    - ai-swarm status : Check agent health
+    - ai-swarm deploy : Deploy new agents
+    
+    Available Agents:
+    - Claude Chat Analyzer
+    - Project Executor
+    - Business Monetizer
+    - Ecosystem MCP Server
+    
+    Which agent would you like to control?
+
+# Warp.dev Key Bindings
+key_bindings:
+  "Ctrl+Shift+E": "memu status"
+  "Ctrl+Shift+D": "memu deploy"
+  "Ctrl+Shift+M": "memu monitor"
+  "Ctrl+Shift+S": "memu security"
+  "Ctrl+Shift+A": "ai-swarm start"
+  "Ctrl+Shift+B": "biz-intel revenue"
+
+# Warp.dev Themes and Customization
+themes:
+  ecosystem_theme:
+    name: "IZA OS Enterprise"
+    description: "Professional theme for $698B+ ecosystem"
+    colors:
+      primary: "#1e40af"
+      secondary: "#059669"
+      accent: "#dc2626"
+      background: "#0f172a"
+      text: "#f1f5f9"
+
+# Warp.dev Integration Scripts
+integration_scripts:
+  setup_ecosystem:
+    name: "Setup Ecosystem"
+    description: "Initialize $698B+ ecosystem environment"
+    script: |
+      #!/bin/bash
+      echo "🚀 Setting up $698B+ IZA OS Enterprise Ecosystem..."
+      cd /Users/divinejohns/memU
+      ./deploy/unified-deployment.sh
+      echo "✅ Ecosystem setup complete!"
+  
+  health_check:
+    name: "Health Check"
+    description: "Run comprehensive ecosystem health check"
+    script: |
+      #!/bin/bash
+      echo "🏥 Running ecosystem health check..."
+      cd /Users/divinejohns/memU
+      node _MCP_INTEGRATION_HUB/monitoring/unified-health-check.js
+      echo "✅ Health check complete!"
+  
+  security_audit:
+    name: "Security Audit"
+    description: "Run security audit and hardening"
+    script: |
+      #!/bin/bash
+      echo "🔒 Running security audit..."
+      cd /Users/divinejohns/memU
+      ./_MCP_INTEGRATION_HUB/security/security-hardening.sh
+      echo "✅ Security audit complete!"
+
+# Warp.dev Workflow Templates
+workflow_templates:
+  daily_operations:
+    name: "Daily Operations"
+    description: "Daily ecosystem management workflow"
+    steps:
+      - "memu status"
+      - "health_check"
+      - "biz-intel revenue"
+      - "ai-swarm status"
+  
+  deployment_workflow:
+    name: "Deployment Workflow"
+    description: "Complete ecosystem deployment"
+    steps:
+      - "memu deploy"
+      - "health_check"
+      - "security_audit"
+      - "memu monitor"
+  
+  maintenance_workflow:
+    name: "Maintenance Workflow"
+    description: "Ecosystem maintenance and updates"
+    steps:
+      - "memu security"
+      - "health_check"
+      - "memu deploy"
+      - "daily_operations"
+
+# Warp.dev Performance Optimization
+performance_optimization:
+  command_caching: true
+  result_caching: true
+  parallel_execution: true
+  resource_monitoring: true
+  
+  optimization_rules:
+    - "Cache frequently used commands"
+    - "Parallel execution for independent tasks"
+    - "Resource monitoring for heavy operations"
+    - "Automatic cleanup of temporary files"
+
+# Warp.dev Security Rules
+security_rules:
+  authentication:
+    required: true
+    method: "jwt"
+    token_expiry: "1h"
+  
+  authorization:
+    role_based: true
+    permissions:
+      - "read"
+      - "write"
+      - "execute"
+      - "admin"
+  
+  audit_logging:
+    enabled: true
+    log_level: "info"
+    retention_days: 90
+  
+  encryption:
+    enabled: true
+    algorithm: "AES-256-GCM"
+
+# Warp.dev Error Handling
+error_handling:
+  retry_attempts: 3
+  retry_delay: 1000  # milliseconds
+  fallback_commands:
+    - "memu status"
+    - "health_check"
+  
+  error_recovery:
+    automatic_restart: true
+    health_check_on_error: true
+    notification_on_error: true
+
+# Warp.dev Integration Status
+integration_status:
+  active: true
+  last_updated: "2024-12-26T00:00:00Z"
+  version: "2.0.0"
+  ecosystem_value: "$698B+"
+  
+  health_check:
+    interval: 300  # seconds
+    timeout: 30    # seconds
+    retry_attempts: 3
+  
+  monitoring:
+    enabled: true
+    metrics_collection: true
+    alerting: true

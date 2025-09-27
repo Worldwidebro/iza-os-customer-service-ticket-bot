@@ -1,0 +1,381 @@
+{
+  "service_registry": {
+    "version": "2.0.0",
+    "ecosystem_value": "$698B+",
+    "last_updated": "2024-12-26T00:00:00Z",
+    "description": "Centralized service registry for $698B+ IZA OS Enterprise Ecosystem",
+    
+    "services": {
+      "core_infrastructure": {
+        "api-gateway": {
+          "name": "API Gateway",
+          "port": 8080,
+          "health_endpoint": "/health",
+          "status": "active",
+          "value": "$50B+",
+          "dependencies": ["memu-dashboard", "backend-core", "n8n-workflows"],
+          "description": "Central entry point for all ecosystem services",
+          "tags": ["core", "gateway", "api"]
+        },
+        "memu-dashboard": {
+          "name": "MEMU Dashboard",
+          "port": 3004,
+          "health_endpoint": "/health",
+          "status": "active",
+          "value": "$25B+",
+          "dependencies": ["backend-core", "ollama-ai"],
+          "description": "Unified interface for ecosystem management",
+          "tags": ["core", "dashboard", "ui"]
+        },
+        "backend-core": {
+          "name": "Backend Core",
+          "port": 3000,
+          "health_endpoint": "/health",
+          "status": "active",
+          "value": "$40B+",
+          "dependencies": ["postgres", "redis"],
+          "description": "Business logic and core services",
+          "tags": ["core", "backend", "api"]
+        }
+      },
+      
+      "data_services": {
+        "postgres": {
+          "name": "PostgreSQL Database",
+          "port": 5432,
+          "health_endpoint": "",
+          "status": "active",
+          "value": "$15B+",
+          "dependencies": [],
+          "description": "Primary database for ecosystem data",
+          "tags": ["data", "database", "postgresql"]
+        },
+        "redis": {
+          "name": "Redis Cache",
+          "port": 6379,
+          "health_endpoint": "",
+          "status": "active",
+          "value": "$10B+",
+          "dependencies": [],
+          "description": "Caching and session management",
+          "tags": ["data", "cache", "redis"]
+        }
+      },
+      
+      "ai_services": {
+        "ollama-ai": {
+          "name": "Ollama AI",
+          "port": 11434,
+          "health_endpoint": "/api/tags",
+          "status": "active",
+          "value": "$30B+",
+          "dependencies": [],
+          "description": "AI model service and inference",
+          "tags": ["ai", "llm", "inference"]
+        },
+        "omnara-mcp": {
+          "name": "Omnara MCP",
+          "port": 8080,
+          "health_endpoint": "/health",
+          "status": "active",
+          "value": "$35B+",
+          "dependencies": ["postgres", "ollama-ai"],
+          "description": "Agent orchestration and management",
+          "tags": ["ai", "agents", "orchestration"]
+        }
+      },
+      
+      "automation_services": {
+        "n8n-workflows": {
+          "name": "N8N Workflows",
+          "port": 5679,
+          "health_endpoint": "/health",
+          "status": "active",
+          "value": "$45B+",
+          "dependencies": [],
+          "description": "Process automation and workflow management",
+          "tags": ["automation", "workflows", "n8n"]
+        }
+      },
+      
+      "financial_services": {
+        "quant-finance": {
+          "name": "Quant Finance",
+          "port": 8086,
+          "health_endpoint": "/health",
+          "status": "active",
+          "value": "$40B+",
+          "dependencies": ["postgres", "redis"],
+          "description": "Financial AI and trading systems",
+          "tags": ["finance", "trading", "quant"]
+        }
+      },
+      
+      "monitoring_services": {
+        "prometheus": {
+          "name": "Prometheus",
+          "port": 9090,
+          "health_endpoint": "/health",
+          "status": "active",
+          "value": "$5B+",
+          "dependencies": [],
+          "description": "Metrics collection and monitoring",
+          "tags": ["monitoring", "metrics", "prometheus"]
+        },
+        "grafana": {
+          "name": "Grafana",
+          "port": 3001,
+          "health_endpoint": "/health",
+          "status": "active",
+          "value": "$8B+",
+          "dependencies": ["prometheus"],
+          "description": "Monitoring dashboards and visualization",
+          "tags": ["monitoring", "dashboards", "grafana"]
+        },
+        "jaeger": {
+          "name": "Jaeger",
+          "port": 16686,
+          "health_endpoint": "/health",
+          "status": "active",
+          "value": "$3B+",
+          "dependencies": [],
+          "description": "Distributed tracing and observability",
+          "tags": ["monitoring", "tracing", "jaeger"]
+        }
+      },
+      
+      "enterprise_services": {
+        "business-intelligence": {
+          "name": "Business Intelligence",
+          "port": 3011,
+          "health_endpoint": "/health",
+          "status": "active",
+          "value": "$25B+",
+          "dependencies": ["postgres", "redis"],
+          "description": "Business analytics and intelligence",
+          "tags": ["enterprise", "analytics", "bi"]
+        },
+        "autonomous-system": {
+          "name": "Autonomous System",
+          "port": 3012,
+          "health_endpoint": "/health",
+          "status": "active",
+          "value": "$50B+",
+          "dependencies": ["postgres", "redis"],
+          "description": "Autonomous venture studio operations",
+          "tags": ["enterprise", "autonomous", "ai"]
+        },
+        "security-system": {
+          "name": "Security System",
+          "port": 3013,
+          "health_endpoint": "/health",
+          "status": "active",
+          "value": "$20B+",
+          "dependencies": ["postgres", "redis"],
+          "description": "Security and compliance management",
+          "tags": ["enterprise", "security", "compliance"]
+        },
+        "devops-system": {
+          "name": "DevOps System",
+          "port": 3014,
+          "health_endpoint": "/health",
+          "status": "active",
+          "value": "$15B+",
+          "dependencies": ["postgres", "redis"],
+          "description": "DevOps automation and management",
+          "tags": ["enterprise", "devops", "automation"]
+        },
+        "integration-system": {
+          "name": "Integration System",
+          "port": 3015,
+          "health_endpoint": "/health",
+          "status": "active",
+          "value": "$30B+",
+          "dependencies": ["postgres", "redis"],
+          "description": "Third-party integrations and APIs",
+          "tags": ["enterprise", "integrations", "api"]
+        },
+        "frontend-system": {
+          "name": "Frontend System",
+          "port": 3016,
+          "health_endpoint": "/health",
+          "status": "active",
+          "value": "$20B+",
+          "dependencies": ["postgres", "redis"],
+          "description": "Frontend applications and UIs",
+          "tags": ["enterprise", "frontend", "ui"]
+        }
+      }
+    },
+    
+    "mcp_services": {
+      "ecosystem-mcp-server": {
+        "name": "Ecosystem MCP Server",
+        "port": 8000,
+        "health_endpoint": "/health",
+        "status": "active",
+        "value": "$15B+",
+        "dependencies": [],
+        "description": "Main ecosystem MCP server for $698B+ access",
+        "tags": ["mcp", "ecosystem", "server"]
+      },
+      "claude-chat-analyzer": {
+        "name": "Claude Chat Analyzer",
+        "port": 8001,
+        "health_endpoint": "/health",
+        "status": "active",
+        "value": "$10B+",
+        "dependencies": [],
+        "description": "Claude AI chat analysis and processing",
+        "tags": ["mcp", "claude", "ai"]
+      },
+      "project-executor": {
+        "name": "Project Executor",
+        "port": 8002,
+        "health_endpoint": "/health",
+        "status": "active",
+        "value": "$12B+",
+        "dependencies": [],
+        "description": "Project execution automation and management",
+        "tags": ["mcp", "execution", "automation"]
+      },
+      "business-monetizer": {
+        "name": "Business Monetizer",
+        "port": 8003,
+        "health_endpoint": "/health",
+        "status": "active",
+        "value": "$8B+",
+        "dependencies": [],
+        "description": "Business monetization optimization and tracking",
+        "tags": ["mcp", "business", "monetization"]
+      }
+    },
+    
+    "ecosystem_components": {
+      "billionaire_consciousness_empire": {
+        "name": "Billionaire Consciousness Empire",
+        "value": "$350B+",
+        "status": "active",
+        "description": "Core consciousness platform and empire building tools",
+        "components": {
+          "core-platform": { "value": "$150B+", "description": "Core consciousness platform" },
+          "empire-builder": { "value": "$100B+", "description": "Empire building tools and systems" },
+          "workflow-orchestrator": { "value": "$75B+", "description": "Workflow orchestration and automation" },
+          "ai-intelligence": { "value": "$25B+", "description": "AI intelligence and decision making" }
+        },
+        "tags": ["consciousness", "empire", "autonomous"]
+      },
+      "iza_enterprise_platform": {
+        "name": "IZA Enterprise Platform",
+        "value": "$200B+",
+        "status": "active",
+        "description": "Unified enterprise operating system and automation",
+        "components": {
+          "iza-os-core": { "value": "$80B+", "description": "Core IZA OS functionality" },
+          "enterprise-modules": { "value": "$60B+", "description": "Enterprise-specific modules" },
+          "integrations": { "value": "$40B+", "description": "Third-party integrations" },
+          "configurations": { "value": "$20B+", "description": "Configuration management" }
+        },
+        "tags": ["enterprise", "platform", "automation"]
+      },
+      "worldwidebro_integration": {
+        "name": "Worldwidebro Integration",
+        "value": "$80B+",
+        "status": "active",
+        "description": "Global scaling and integration platform",
+        "components": {
+          "global-api-gateway": { "value": "$30B+", "description": "Global API gateway" },
+          "scalability-orchestrator": { "value": "$25B+", "description": "Scalability orchestration" },
+          "multi-region-deployment": { "value": "$15B+", "description": "Multi-region deployment" },
+          "localization-engine": { "value": "$10B+", "description": "Localization and internationalization" }
+        },
+        "tags": ["global", "scaling", "integration"]
+      },
+      "genix_bank_financial": {
+        "name": "Genix Bank Financial",
+        "value": "$40B+",
+        "status": "active",
+        "description": "Financial services and banking platform",
+        "components": {
+          "banking-core": { "value": "$20B+", "description": "Core banking functionality" },
+          "payment-processing": { "value": "$10B+", "description": "Payment processing systems" },
+          "financial-analytics": { "value": "$7B+", "description": "Financial analytics and reporting" },
+          "regulatory-compliance": { "value": "$3B+", "description": "Regulatory compliance systems" }
+        },
+        "tags": ["finance", "banking", "financial"]
+      },
+      "ai_agent_ecosystem": {
+        "name": "AI Agent Ecosystem",
+        "value": "$20B+",
+        "status": "active",
+        "description": "Agent orchestration and intelligence synthesis",
+        "components": {
+          "crewai-orchestration": { "value": "$8B+", "description": "CrewAI agent orchestration" },
+          "autogen-workflows": { "value": "$6B+", "description": "AutoGen workflow management" },
+          "agent-marketplace": { "value": "$4B+", "description": "Agent marketplace and trading" },
+          "intelligence-synthesis": { "value": "$2B+", "description": "Intelligence synthesis and analysis" }
+        },
+        "tags": ["ai", "agents", "orchestration"]
+      }
+    },
+    
+    "networks": {
+      "iza-network": {
+        "name": "IZA Network",
+        "driver": "bridge",
+        "subnet": "172.20.0.0/16",
+        "description": "Primary network for $698B+ ecosystem services"
+      }
+    },
+    
+    "volumes": {
+      "postgres-data": {
+        "name": "PostgreSQL Data",
+        "description": "Persistent database storage"
+      },
+      "redis-data": {
+        "name": "Redis Data",
+        "description": "Cache persistence"
+      },
+      "n8n-data": {
+        "name": "N8N Data",
+        "description": "Workflow data persistence"
+      },
+      "ollama-models": {
+        "name": "Ollama Models",
+        "description": "AI model storage"
+      },
+      "prometheus-data": {
+        "name": "Prometheus Data",
+        "description": "Metrics data persistence"
+      },
+      "grafana-data": {
+        "name": "Grafana Data",
+        "description": "Dashboard configuration persistence"
+      }
+    },
+    
+    "health_check_config": {
+      "interval_seconds": 30,
+      "timeout_seconds": 5,
+      "retry_attempts": 3,
+      "alert_thresholds": {
+        "cpu_usage_percent": 80,
+        "memory_usage_percent": 85,
+        "disk_usage_percent": 90,
+        "response_time_ms": 5000
+      }
+    },
+    
+    "deployment_config": {
+      "strategy": "blue-green",
+      "rollback_enabled": true,
+      "health_check_timeout_seconds": 300,
+      "scaling": {
+        "min_replicas": 2,
+        "max_replicas": 10,
+        "target_cpu_utilization_percent": 70
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-09-26T00:50:53.922Z",
+  "overall_status": "all_passed",
+  "tests": [
+    {
+      "name": "Ecosystem Structure",
+      "status": "passed",
+      "duration": 5,
+      "details": "All required directories exist",
+      "timestamp": "2025-09-26T00:50:53.940Z"
+    },
+    {
+      "name": "MCP Server Connectivity",
+      "status": "passed",
+      "duration": 1,
+      "details": "MCP server files and dependencies available",
+      "timestamp": "2025-09-26T00:50:53.942Z"
+    },
+    {
+      "name": "Warp Configuration",
+      "status": "passed",
+      "duration": 13,
+      "details": "Warp configuration valid",
+      "timestamp": "2025-09-26T00:50:53.956Z"
+    },
+    {
+      "name": "Terminal Profiles",
+      "status": "passed",
+      "duration": 7,
+      "details": "All terminal profiles valid",
+      "timestamp": "2025-09-26T00:50:53.964Z"
+    },
+    {
+      "name": "Health Monitoring",
+      "status": "passed",
+      "duration": 1023,
+      "details": "Health monitoring system operational",
+      "timestamp": "2025-09-26T00:50:54.989Z"
+    },
+    {
+      "name": "Claude CLI Integration",
+      "status": "passed",
+      "duration": 43,
+      "details": "Claude CLI available",
+      "timestamp": "2025-09-26T00:50:55.032Z"
+    },
+    {
+      "name": "Ecosystem Permissions",
+      "status": "passed",
+      "duration": 1,
+      "details": "All directories have proper permissions",
+      "timestamp": "2025-09-26T00:50:55.033Z"
+    },
+    {
+      "name": "Performance Metrics",
+      "status": "passed",
+      "duration": 11,
+      "details": "File system performance: 11ms",
+      "timestamp": "2025-09-26T00:50:55.044Z"
+    }
+  ],
+  "summary": {
+    "total_tests": 8,
+    "passed": 8,
+    "failed": 0,
+    "errored": 0,
+    "success_rate": 100
+  },
+  "issues": []
+}

@@ -1,0 +1,43 @@
+{
+  "profile": {
+    "name": "🏢 IZA Enterprise Platform",
+    "description": "IZA OS development, deployment, and enterprise operations center",
+    "working_directory": "/Users/divinejohns/memU/_IZA_ENTERPRISE_PLATFORM", 
+    "environment_variables": {
+      "IZA_OS_MODE": "development",
+      "ENTERPRISE_ACCESS": "full",
+      "KUBERNETES_ORCHESTRATION": "enabled",
+      "CLOUD_RESOURCE_MANAGER": "active",
+      "CODE_GENERATION": "enabled",
+      "DEPLOYMENT_AUTOMATION": "active",
+      "ECOSYSTEM_ROOT": "/Users/divinejohns/memU"
+    },
+    "startup_commands": [
+      "clear",
+      "echo '🏢 === IZA ENTERPRISE PLATFORM OPERATIONAL === 🏢'",
+      "echo '⚙️  Enterprise OS & Deployment Systems Active'",
+      "echo '🔧 System Status:'",
+      "ls -la 2>/dev/null || echo 'Initializing enterprise infrastructure...'",
+      "echo ''",
+      "echo '🚀 Available Operations:'",
+      "echo '  - claude \"Check IZA OS deployment status\"'",
+      "echo '  - claude \"Show enterprise module health\"'",
+      "echo '  - claude \"Deploy IZA OS components\"'",
+      "echo '  - claude \"Optimize enterprise performance\"'",
+      "echo ''",
+      "echo '💼 Enterprise platform ready for operations!'",
+      "echo '========================================================================================'"
+    ],
+    "theme": {
+      "primary_color": "#007ACC",
+      "background_color": "#0d1117",
+      "text_color": "#ffffff"
+    },
+    "shortcuts": {
+      "cmd+shift+i": "claude \"Show IZA Enterprise Platform status and available modules\"",
+      "cmd+shift+d": "claude \"Deploy IZA OS services to development environment\"",
+      "cmd+shift+k": "claude \"Check Kubernetes orchestration status\"",
+      "cmd+shift+h": "cd /Users/divinejohns/memU/_MCP_INTEGRATION_HUB && node monitoring/health-check.cjs"
+    }
+  }
+}

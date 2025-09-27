@@ -1,0 +1,42 @@
+{
+  "profile": {
+    "name": "🔗 MCP Integration Hub", 
+    "description": "MCP server management, monitoring, and Warp integration control center",
+    "working_directory": "/Users/divinejohns/memU/_MCP_INTEGRATION_HUB",
+    "environment_variables": {
+      "MCP_MANAGEMENT_MODE": "active",
+      "SERVER_MONITORING": "enabled", 
+      "WARP_INTEGRATION": "active",
+      "ECOSYSTEM_CONNECTIVITY": "full",
+      "HEALTH_MONITORING": "realtime",
+      "ECOSYSTEM_ROOT": "/Users/divinejohns/memU"
+    },
+    "startup_commands": [
+      "clear",
+      "echo '🔗 === MCP INTEGRATION HUB CONTROL CENTER === 🔗'",
+      "echo '📡 Model Context Protocol Management Active'",
+      "echo '🖥️  Server Status Check:'",
+      "node monitoring/health-check.cjs 2>/dev/null || echo 'Initializing MCP health monitoring...'",
+      "echo ''",
+      "echo '⚙️  MCP Operations:'",
+      "echo '  - claude \"Check MCP server health and status\"'",
+      "echo '  - claude \"Test Warp.dev integration connectivity\"'",
+      "echo '  - claude \"Restart MCP servers if needed\"'",
+      "echo '  - claude \"Show MCP endpoint documentation\"'",
+      "echo ''",
+      "echo '🔧 MCP Hub ready for server management!'",
+      "echo '========================================================================================'"
+    ],
+    "theme": {
+      "primary_color": "#ff6b35",
+      "background_color": "#1a1a1a", 
+      "text_color": "#ffffff"
+    },
+    "shortcuts": {
+      "cmd+shift+m": "node monitoring/health-check.cjs",
+      "cmd+shift+s": "claude \"Show detailed MCP server status and capabilities\"",
+      "cmd+shift+r": "claude \"Restart all MCP servers and test connectivity\"",
+      "cmd+shift+t": "claude \"Test MCP integration with Warp.dev and validate all endpoints\""
+    }
+  }
+}

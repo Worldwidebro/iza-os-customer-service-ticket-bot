@@ -1,0 +1,42 @@
+{
+  "profile": {
+    "name": "🤖 AI Agent Ecosystem",
+    "description": "AI agent orchestration, CrewAI management, and intelligent automation control center",
+    "working_directory": "/Users/divinejohns/memU/_AI_AGENT_ECOSYSTEM",
+    "environment_variables": {
+      "AGENT_ORCHESTRATION": "enabled",
+      "CREWAI_MODE": "active",
+      "AUTOGEN_WORKFLOWS": "enabled",
+      "INTELLIGENCE_SYNTHESIS": "active",
+      "AGENT_MARKETPLACE": "enabled",
+      "ECOSYSTEM_ROOT": "/Users/divinejohns/memU"
+    },
+    "startup_commands": [
+      "clear",
+      "echo '🤖 === AI AGENT ECOSYSTEM ONLINE === 🤖'",
+      "echo '🧠 Intelligent Automation & Agent Orchestration Active'",
+      "echo '⚡ Agent Status:'",
+      "ls -la 2>/dev/null || echo 'Initializing AI agent infrastructure...'",
+      "echo ''",
+      "echo '🎯 Agent Operations:'",
+      "echo '  - claude \"Show available AI agents and capabilities\"'",
+      "echo '  - claude \"Launch CrewAI orchestration workflow\"'",
+      "echo '  - claude \"Check AutoGen agent status\"'", 
+      "echo '  - claude \"Optimize agent performance\"'",
+      "echo ''",
+      "echo '🚀 AI agent ecosystem ready for intelligent automation!'",
+      "echo '========================================================================================'"
+    ],
+    "theme": {
+      "primary_color": "#00ff88",
+      "background_color": "#0a0a0a",
+      "text_color": "#00ff88"
+    },
+    "shortcuts": {
+      "cmd+shift+a": "claude \"Show all available AI agents and their current status\"",
+      "cmd+shift+c": "claude \"Launch CrewAI orchestration for current task\"",
+      "cmd+shift+g": "claude \"Generate AutoGen workflow for project automation\"",
+      "cmd+shift+h": "cd /Users/divinejohns/memU/_MCP_INTEGRATION_HUB && node monitoring/health-check.cjs"
+    }
+  }
+}

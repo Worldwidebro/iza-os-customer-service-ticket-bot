@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "claude-chat-analyzer": {
+      "command": "node",
+      "args": ["~/.cursor/mcp-servers/claude-chat-analyzer.js"],
+      "env": {
+        "ANTHROPIC_API_KEY": "YOUR_API_KEY_HERE"
+      }
+    },
+    "project-executor": {
+      "command": "node", 
+      "args": ["~/.cursor/mcp-servers/project-executor.js"],
+      "env": {
+        "EXECUTION_MODE": "autonomous",
+        "PROJECT_COMPLETION": "enabled"
+      }
+    },
+    "business-monetizer": {
+      "command": "node",
+      "args": ["~/.cursor/mcp-servers/business-monetizer.js"],
+      "env": {
+        "REVENUE_OPTIMIZATION": "enabled"
+      }
+    }
+  }
+}

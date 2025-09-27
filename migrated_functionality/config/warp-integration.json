@@ -1,0 +1,169 @@
+{
+  "warp_mcp_integration": {
+    "version": "1.0.0",
+    "description": "Unified MCP integration for Warp.dev with complete ecosystem access",
+    "mcpServers": {
+      "memU-ecosystem": {
+        "command": "node",
+        "args": ["/Users/divinejohns/memU/_MCP_INTEGRATION_HUB/servers/ecosystem-mcp-server/server.js"],
+        "env": {
+          "ECOSYSTEM_ROOT": "/Users/divinejohns/memU",
+          "BILLIONAIRE_CONSCIOUSNESS_ACCESS": "enabled",
+          "IZA_ENTERPRISE_ACCESS": "enabled", 
+          "WORLDWIDEBRO_ACCESS": "enabled",
+          "GENIX_BANK_ACCESS": "enabled",
+          "AI_AGENT_ORCHESTRATION": "enabled",
+          "MCP_HUB_MANAGEMENT": "enabled",
+          "WARP_INTEGRATION_MODE": "full"
+        }
+      },
+      "claude-chat-analyzer": {
+        "command": "node",
+        "args": ["/Users/divinejohns/memU/_MCP_INTEGRATION_HUB/servers/claude-chat-extractor.js"],
+        "env": {
+          "ANTHROPIC_API_KEY": "YOUR_API_KEY_HERE",
+          "ECOSYSTEM_INTEGRATION": "enabled"
+        }
+      },
+      "project-executor": {
+        "command": "node", 
+        "args": ["/Users/divinejohns/memU/_MCP_INTEGRATION_HUB/servers/project-executor.js"],
+        "env": {
+          "EXECUTION_MODE": "autonomous",
+          "PROJECT_COMPLETION": "enabled",
+          "ECOSYSTEM_CONTEXT": "enabled"
+        }
+      },
+      "business-monetizer": {
+        "command": "node",
+        "args": ["/Users/divinejohns/memU/_MCP_INTEGRATION_HUB/servers/business-monetizer.js"],
+        "env": {
+          "REVENUE_OPTIMIZATION": "enabled",
+          "ECOSYSTEM_MONETIZATION": "enabled"
+        }
+      }
+    },
+    "terminal_profiles": {
+      "consciousness": {
+        "name": "🧠 Consciousness Empire",
+        "description": "Direct access to Billionaire Consciousness Empire tools",
+        "working_directory": "/Users/divinejohns/memU/_BILLIONAIRE_CONSCIOUSNESS_EMPIRE",
+        "environment_variables": {
+          "CONSCIOUSNESS_MODE": "active",
+          "EMPIRE_BUILDING": "enabled"
+        },
+        "startup_commands": [
+          "echo '🧠 Entering Billionaire Consciousness Mode...'",
+          "ls -la | head -10"
+        ]
+      },
+      "enterprise": {
+        "name": "🏢 IZA Enterprise",
+        "description": "IZA OS development and enterprise operations",
+        "working_directory": "/Users/divinejohns/memU/_IZA_ENTERPRISE_PLATFORM",
+        "environment_variables": {
+          "IZA_OS_MODE": "development",
+          "ENTERPRISE_ACCESS": "full"
+        },
+        "startup_commands": [
+          "echo '🏢 IZA Enterprise Platform activated'",
+          "pwd && ls -la | head -10"
+        ]
+      },
+      "agents": {
+        "name": "🤖 AI Agents",
+        "description": "AI agent orchestration and management",
+        "working_directory": "/Users/divinejohns/memU/_AI_AGENT_ECOSYSTEM",
+        "environment_variables": {
+          "AGENT_ORCHESTRATION": "enabled",
+          "CREWAI_MODE": "active"
+        },
+        "startup_commands": [
+          "echo '🤖 AI Agent Ecosystem online'",
+          "pwd && ls -la | head -5"
+        ]
+      },
+      "mcp": {
+        "name": "🔗 MCP Hub",
+        "description": "MCP server management and monitoring",
+        "working_directory": "/Users/divinejohns/memU/_MCP_INTEGRATION_HUB",
+        "environment_variables": {
+          "MCP_MANAGEMENT_MODE": "active",
+          "SERVER_MONITORING": "enabled"
+        },
+        "startup_commands": [
+          "echo '🔗 MCP Integration Hub control center'",
+          "ls -la servers/ | head -5"
+        ]
+      }
+    },
+    "command_palette": {
+      "ecosystem_commands": [
+        {
+          "name": "Deploy Consciousness Empire",
+          "command": "cd /Users/divinejohns/memU/_BILLIONAIRE_CONSCIOUSNESS_EMPIRE && ./deploy.sh",
+          "description": "Deploy the Billionaire Consciousness Empire platform"
+        },
+        {
+          "name": "Start IZA OS Services",
+          "command": "cd /Users/divinejohns/memU/_IZA_ENTERPRISE_PLATFORM && docker-compose up -d",
+          "description": "Start IZA Enterprise Platform services"
+        },
+        {
+          "name": "Launch AI Agent Orchestra",
+          "command": "cd /Users/divinejohns/memU/_AI_AGENT_ECOSYSTEM && python agent_orchestrator.py",
+          "description": "Launch AI agent orchestration system"
+        },
+        {
+          "name": "Monitor MCP Health",
+          "command": "cd /Users/divinejohns/memU/_MCP_INTEGRATION_HUB && node monitoring/health-check.js",
+          "description": "Check health status of all MCP servers"
+        },
+        {
+          "name": "Optimize Ecosystem",
+          "command": "cd /Users/divinejohns/memU && ./optimize-ecosystem.sh",
+          "description": "Run ecosystem optimization algorithms"
+        }
+      ],
+      "quick_access": [
+        {
+          "name": "Ecosystem Status",
+          "command": "cd /Users/divinejohns/memU && find . -name '*.json' -path '*/health/*' -exec cat {} \\;",
+          "description": "Quick overview of ecosystem health"
+        },
+        {
+          "name": "Recent Changes",
+          "command": "cd /Users/divinejohns/memU && git --no-pager log --oneline -10",
+          "description": "Show recent changes across ecosystem"
+        },
+        {
+          "name": "Resource Usage",
+          "command": "du -sh /Users/divinejohns/memU/*/",
+          "description": "Display resource usage by component"
+        }
+      ]
+    },
+    "automation_scripts": {
+      "daily_health_check": {
+        "schedule": "0 9 * * *",
+        "command": "cd /Users/divinejohns/memU/_MCP_INTEGRATION_HUB && node monitoring/daily-health-check.js"
+      },
+      "ecosystem_backup": {
+        "schedule": "0 2 * * *", 
+        "command": "cd /Users/divinejohns && ./backup-ecosystem.sh"
+      },
+      "performance_optimization": {
+        "schedule": "0 1 * * 0",
+        "command": "cd /Users/divinejohns/memU && ./weekly-optimization.sh"
+      }
+    },
+    "integration_status": {
+      "warp_version": "latest",
+      "mcp_sdk_version": "0.5.0",
+      "last_updated": "2025-09-25T23:50:00Z",
+      "health_check_interval": "5m",
+      "auto_restart": true,
+      "logging_level": "info"
+    }
+  }
+}

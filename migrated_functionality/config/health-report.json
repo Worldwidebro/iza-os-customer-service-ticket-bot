@@ -1,0 +1,214 @@
+{
+  "timestamp": "2025-09-26T01:06:56.123Z",
+  "overall_status": "unhealthy",
+  "servers": [
+    {
+      "name": "memU-ecosystem",
+      "status": "healthy",
+      "response_time": 248,
+      "last_check": "2025-09-26T01:06:56.160Z",
+      "config": {
+        "command": "node",
+        "args": [
+          "/Users/divinejohns/memU/_MCP_INTEGRATION_HUB/servers/ecosystem-mcp-server/server.js"
+        ],
+        "env": {
+          "ECOSYSTEM_ROOT": "/Users/divinejohns/memU",
+          "BILLIONAIRE_CONSCIOUSNESS_ACCESS": "enabled",
+          "IZA_ENTERPRISE_ACCESS": "enabled",
+          "WORLDWIDEBRO_ACCESS": "enabled",
+          "GENIX_BANK_ACCESS": "enabled",
+          "AI_AGENT_ORCHESTRATION": "enabled",
+          "MCP_HUB_MANAGEMENT": "enabled",
+          "WARP_INTEGRATION_MODE": "full"
+        }
+      },
+      "issues": [],
+      "capabilities": [],
+      "file_exists": true,
+      "dependencies": {
+        "status": "installed",
+        "package_json": true,
+        "node_modules": true,
+        "dependencies": [
+          "@modelcontextprotocol/sdk",
+          "express",
+          "cors",
+          "helmet",
+          "compression",
+          "winston",
+          "node-cron",
+          "fs-extra",
+          "glob"
+        ]
+      },
+      "syntax_valid": true
+    },
+    {
+      "name": "claude-chat-analyzer",
+      "status": "healthy",
+      "response_time": 240,
+      "last_check": "2025-09-26T01:06:56.412Z",
+      "config": {
+        "command": "node",
+        "args": [
+          "/Users/divinejohns/memU/_MCP_INTEGRATION_HUB/servers/claude-chat-extractor.js"
+        ],
+        "env": {
+          "ANTHROPIC_API_KEY": "YOUR_API_KEY_HERE",
+          "ECOSYSTEM_INTEGRATION": "enabled"
+        }
+      },
+      "issues": [],
+      "capabilities": [],
+      "file_exists": true,
+      "dependencies": {
+        "status": "installed",
+        "package_json": true,
+        "node_modules": true,
+        "dependencies": [
+          "@anthropic-ai/sdk",
+          "@modelcontextprotocol/sdk",
+          "axios",
+          "dotenv"
+        ]
+      },
+      "syntax_valid": true
+    },
+    {
+      "name": "project-executor",
+      "status": "healthy",
+      "response_time": 244,
+      "last_check": "2025-09-26T01:06:56.653Z",
+      "config": {
+        "command": "node",
+        "args": [
+          "/Users/divinejohns/memU/_MCP_INTEGRATION_HUB/servers/project-executor.js"
+        ],
+        "env": {
+          "EXECUTION_MODE": "autonomous",
+          "PROJECT_COMPLETION": "enabled",
+          "ECOSYSTEM_CONTEXT": "enabled"
+        }
+      },
+      "issues": [],
+      "capabilities": [],
+      "file_exists": true,
+      "dependencies": {
+        "status": "installed",
+        "package_json": true,
+        "node_modules": true,
+        "dependencies": [
+          "@anthropic-ai/sdk",
+          "@modelcontextprotocol/sdk",
+          "axios",
+          "dotenv"
+        ]
+      },
+      "syntax_valid": true
+    },
+    {
+      "name": "business-monetizer",
+      "status": "unhealthy",
+      "response_time": 0,
+      "last_check": "2025-09-26T01:06:56.898Z",
+      "config": {
+        "command": "node",
+        "args": [
+          "/Users/divinejohns/memU/_MCP_INTEGRATION_HUB/servers/business-monetizer.js"
+        ],
+        "env": {
+          "REVENUE_OPTIMIZATION": "enabled",
+          "ECOSYSTEM_MONETIZATION": "enabled"
+        }
+      },
+      "issues": [
+        "Server file not found"
+      ],
+      "capabilities": [],
+      "file_exists": false,
+      "dependencies": {
+        "status": "installed",
+        "package_json": true,
+        "node_modules": true,
+        "dependencies": [
+          "@anthropic-ai/sdk",
+          "@modelcontextprotocol/sdk",
+          "axios",
+          "dotenv"
+        ]
+      }
+    },
+    {
+      "name": "claude-chat-extractor.js",
+      "status": "available",
+      "type": "discovered",
+      "last_check": "2025-09-26T01:06:56.903Z",
+      "issues": [],
+      "location": "/Users/divinejohns/memU/_MCP_INTEGRATION_HUB/servers/claude-chat-extractor.js",
+      "entry_point": "/Users/divinejohns/memU/_MCP_INTEGRATION_HUB/servers/claude-chat-extractor.js"
+    },
+    {
+      "name": "ecosystem-mcp-server",
+      "status": "available",
+      "type": "discovered",
+      "last_check": "2025-09-26T01:06:56.903Z",
+      "issues": [],
+      "location": "/Users/divinejohns/memU/_MCP_INTEGRATION_HUB/servers/ecosystem-mcp-server",
+      "entry_point": "/Users/divinejohns/memU/_MCP_INTEGRATION_HUB/servers/ecosystem-mcp-server/server.js"
+    },
+    {
+      "name": "package-lock.json",
+      "status": "discovered",
+      "type": "discovered",
+      "last_check": "2025-09-26T01:06:56.911Z",
+      "issues": [],
+      "location": "/Users/divinejohns/memU/_MCP_INTEGRATION_HUB/servers/package-lock.json"
+    },
+    {
+      "name": "package.json",
+      "status": "discovered",
+      "type": "discovered",
+      "last_check": "2025-09-26T01:06:56.912Z",
+      "issues": [],
+      "location": "/Users/divinejohns/memU/_MCP_INTEGRATION_HUB/servers/package.json"
+    },
+    {
+      "name": "project-executor.js",
+      "status": "available",
+      "type": "discovered",
+      "last_check": "2025-09-26T01:06:56.913Z",
+      "issues": [],
+      "location": "/Users/divinejohns/memU/_MCP_INTEGRATION_HUB/servers/project-executor.js",
+      "entry_point": "/Users/divinejohns/memU/_MCP_INTEGRATION_HUB/servers/project-executor.js"
+    },
+    {
+      "name": "warp-mcp-bridge",
+      "status": "discovered",
+      "type": "discovered",
+      "last_check": "2025-09-26T01:06:56.915Z",
+      "issues": [],
+      "location": "/Users/divinejohns/memU/_MCP_INTEGRATION_HUB/servers/warp-mcp-bridge"
+    }
+  ],
+  "summary": {
+    "total_servers": 10,
+    "healthy_servers": 3,
+    "warning_servers": 0,
+    "unhealthy_servers": 1,
+    "discovered_servers": 6,
+    "health_percentage": 30
+  },
+  "recommendations": [
+    {
+      "type": "configuration",
+      "priority": "medium",
+      "message": "Configure 3 discovered server(s)",
+      "servers": [
+        "claude-chat-extractor.js",
+        "ecosystem-mcp-server",
+        "project-executor.js"
+      ]
+    }
+  ]
+}

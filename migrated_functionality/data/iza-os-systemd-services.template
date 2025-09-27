@@ -1,0 +1,202 @@
+# =============================================================================
+# IZA OS Ecosystem Services - Systemd Service Template
+# =============================================================================
+# 
+# This file provides systemd service unit templates for more reliable
+# service management on Linux systems with systemd.
+#
+# For installation instructions, see: IZA_OS_DEPLOYMENT_GUIDE.md
+# For per-service documentation, see: service_readmes/ directory
+#
+# =============================================================================
+
+# IZA OS Main Dashboard Service
+[Unit]
+Description=IZA OS Main Dashboard (Port 3000)
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=iza
+Group=iza
+WorkingDirectory=/srv/iza/dashboard
+ExecStart=/usr/bin/python3 -m http.server 3000 --bind 127.0.0.1
+Restart=on-failure
+RestartSec=5
+StartLimitIntervalSec=60
+StartLimitBurst=5
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
+
+# =============================================================================
+
+# Unified Dashboard Service  
+[Unit]
+Description=IZA OS Unified Dashboard (Port 3001)
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=iza
+Group=iza
+WorkingDirectory=/srv/iza/unified
+ExecStart=/usr/bin/python3 /srv/iza/unified/unified_dashboard.py
+Restart=on-failure
+RestartSec=5
+StartLimitIntervalSec=60
+StartLimitBurst=5
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
+
+# =============================================================================
+
+# Business Dashboard Service
+[Unit]
+Description=AI Boss Holdings Business Dashboard (Port 4000)
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=iza
+Group=iza
+WorkingDirectory=/srv/iza/business
+ExecStart=/usr/bin/python3 /srv/iza/business/business_dashboard.py
+Restart=on-failure
+RestartSec=5
+StartLimitIntervalSec=60
+StartLimitBurst=5
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
+
+# =============================================================================
+
+# GenixBank Dashboard Service
+[Unit]
+Description=GenixBank Financial System Dashboard (Port 5000)
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=iza
+Group=iza
+WorkingDirectory=/srv/iza/genixbank
+ExecStart=/usr/bin/python3 /srv/iza/genixbank/genixbank_dashboard.py
+Restart=on-failure
+RestartSec=5
+StartLimitIntervalSec=60
+StartLimitBurst=5
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
+
+# =============================================================================
+
+# Traycer Frontend Service
+[Unit]
+Description=Traycer Design System Frontend (Port 7000)
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=iza
+Group=iza
+WorkingDirectory=/srv/iza/traycer
+ExecStart=/usr/bin/python3 /srv/iza/traycer/traycer_frontend.py
+Restart=on-failure
+RestartSec=5
+StartLimitIntervalSec=60
+StartLimitBurst=5
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
+
+# =============================================================================
+
+# Execution Dashboard Service
+[Unit]
+Description=IZA OS Execution Dashboard (Port 8001)
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=iza
+Group=iza
+WorkingDirectory=/srv/iza/execution
+ExecStart=/usr/bin/python3 /srv/iza/execution/execution_dashboard.py
+Restart=on-failure
+RestartSec=5
+StartLimitIntervalSec=60
+StartLimitBurst=5
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
+
+# =============================================================================
+
+# Web Automation Service
+[Unit]
+Description=IZA OS Web Automation Dashboard (Port 9000)
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=iza
+Group=iza
+WorkingDirectory=/srv/iza/web-automation
+ExecStart=/usr/bin/python3 /srv/iza/web-automation/web_automation_dashboard.py
+Restart=on-failure
+RestartSec=5
+StartLimitIntervalSec=60
+StartLimitBurst=5
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
+
+# =============================================================================
+# Service File Structure
+# =============================================================================
+#
+# Save each service as separate files in /etc/systemd/system/:
+#    - iza-os-dashboard.service
+#    - iza-os-unified-dashboard.service  
+#    - iza-os-business-dashboard.service
+#    - iza-os-genixbank.service
+#    - iza-os-traycer.service
+#    - iza-os-execution.service
+#    - iza-os-web-automation.service
+#
+# For complete installation instructions, see: IZA_OS_DEPLOYMENT_GUIDE.md
+# For per-service documentation, see: service_readmes/ directory
+#
+# =============================================================================

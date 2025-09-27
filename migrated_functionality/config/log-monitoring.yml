@@ -1,0 +1,45 @@
+# Log Monitoring Configuration
+# IZA OS Enterprise Security Standards
+
+log_sources:
+  - name: "system_logs"
+    path: "/var/log/syslog"
+    patterns:
+      - "authentication failure"
+      - "failed login"
+      - "unauthorized access"
+      - "privilege escalation"
+
+  - name: "application_logs"
+    path: "/var/log/application/*.log"
+    patterns:
+      - "error"
+      - "exception"
+      - "security violation"
+      - "access denied"
+
+  - name: "docker_logs"
+    path: "/var/lib/docker/containers/*/*.log"
+    patterns:
+      - "container escape"
+      - "privilege escalation"
+      - "unauthorized access"
+
+alerting:
+  email:
+    smtp_server: "smtp.company.com"
+    smtp_port: 587
+    username: "security-alerts@company.com"
+    password: "${SMTP_PASSWORD}"
+    recipients:
+      - "security-team@company.com"
+      - "devops-team@company.com"
+
+  slack:
+    webhook_url: "${SLACK_WEBHOOK_URL}"
+    channel: "#security-alerts"
+
+  webhook:
+    url: "${WEBHOOK_URL}"
+    headers:
+      Authorization: "Bearer ${WEBHOOK_TOKEN}"
