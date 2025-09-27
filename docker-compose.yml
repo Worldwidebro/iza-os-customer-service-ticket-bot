@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  iza-os-customer-service-ticket-bot:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=development
+      - REVENUE_POTENTIAL=65000
+    volumes:
+      - ./src:/app/src
+      - ./config:/app/config
+    depends_on:
+      - postgres
+      - redis
+
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: iza-os-customer-service-ticket-bot
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+
+volumes:
+  postgres_data:
